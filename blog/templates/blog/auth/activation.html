@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activate your account </title>
+</head>
+<body>
+<p> Hi {{ user.first_name }},</p>
+<p> Please click on the link below to activate your account: </p>
+<p> <a href = "http://{{ domain }}{% url 'verify-email-confirm' uidb64=uid token=token %}"> click on</a></p>
+
+</body>
+</html>
